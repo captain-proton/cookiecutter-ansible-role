@@ -6,7 +6,7 @@ Recipe to create an ansible role.
 
 ```shell
 git clone https://github.com/captain-proton/cookiecutter-ansible-role.git
-cookiecutter --directory cookiecutter-ansible-role
+cookiecutter cookiecutter-ansible-role
 ```
 
 This role automatically creates the common folders, also created by `ansible-galaxy role init foo` or `molecule init role foo`, when creating a new role. You end up with a structure like this.
