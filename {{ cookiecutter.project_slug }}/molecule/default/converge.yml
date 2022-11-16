@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include {{ cookiecutter.author_name }}.{{ cookiecutter.project_slug }}"
+      ansible.builtin.include_role:
+        name: "{{ cookiecutter.author_name }}.{{ cookiecutter.project_slug }}"
