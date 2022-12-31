@@ -1,11 +1,11 @@
 {
     "author_name": "Musgraeth Stahlkopf",
     "email": "mu@thedwarf.com",
-    "github_username": "musgraeth",
+    "git_username": "musgraeth",
     "project_name": "Ansible Role - Awesome",
     "company": "",
-    "project_dir": "{{ cookiecutter.project_name | gen_project_dir }}",
     "project_slug": "awesome",
+    "project_dir": "{{ cookiecutter.git_username }}.{{ cookiecutter.project_slug }}",
     "project_short_description": "This ansible role is going to rock your socks of",
     "min_ansible_version": "2.1",
     "open_source_license": [
@@ -25,6 +25,5 @@
         "geerlingguy/docker-rockylinux8-ansible",
         "geerlingguy/docker-centos8-ansible",
         "manjarolinux/base"
-    ],
-    "_extensions": ["extensions.gen_project_dir"]
+    ]
 }
