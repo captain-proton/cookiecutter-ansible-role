@@ -1,5 +1,6 @@
 galaxy_info:
-  author: {{ cookiecutter.author_name }}
+  role_name: {{ cookiecutter.project_slug }}
+  author: {{ cookiecutter.git_username }}
   description: {{ cookiecutter.project_short_description }}
 {% if cookiecutter.company %}
   company: {{ cookiecutter.company }}
