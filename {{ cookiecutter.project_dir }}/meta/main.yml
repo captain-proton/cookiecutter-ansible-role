@@ -1,5 +1,6 @@
 galaxy_info:
-  author: {{ cookiecutter.author_name }}
+  role_name: {{ cookiecutter.project_slug }}
+  author: {{ cookiecutter.git_username }}
   description: {{ cookiecutter.project_short_description }}
 {% if cookiecutter.company %}
   company: {{ cookiecutter.company }}
@@ -48,6 +49,11 @@ galaxy_info:
 {%- endif %}
 {%- if cookiecutter.redhat == 't' %}
     - name: RedHat
+      versions:
+        - all
+{%- endif %}
+{%- if cookiecutter.archlinux == 't' %}
+    - name: ArchLinux
       versions:
         - all
 {%- endif %}

@@ -5,7 +5,7 @@
 ## Usage
 
 ```shell
-ansible-galaxy install {{ cookiecutter.github_username }}.{{ cookiecutter.project_slug }}
+ansible-galaxy install {{ cookiecutter.git_username }}.{{ cookiecutter.project_slug }}
 ```
 {%- if cookiecutter.open_source_license != "Not open source" %}
 
